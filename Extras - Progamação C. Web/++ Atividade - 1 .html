@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Atividade Extra 1</title>
+	<style type="text/css">
+	* {
+		font-family: Roboto, Helvetica, sans-serif;
+	  }
+		
+	 body {
+		background-color: #ddd;
+	}
+
+	header, main {
+		width: 900px;
+		margin: 0 auto;
+		background-color: #fff;
+		box-shadow: 3px 5px 2px #ccc;
+		padding: 20px 10px;
+
+	}
+
+	main {
+		min-height: 80vh;
+	}
+	header {border-radius: 15px 15px 0px 0;}
+	header img {
+		width: 150px;
+		height: 150px;
+		float:left;
+		margin-right:25px
+	}
+		
+    header h1 {
+	    font-size: 1.5em;
+	    margin: 0;
+		}
+
+	header h3 {
+		margin: 5px 0 10px;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 1.1em;
+	}
+	
+	header h4 {
+		margin:5px 0;
+		font-weight: normal;
+		font-size: 0.8em;
+	}
+		
+	main h4{
+		text-align: center;
+	}
+		
+ 	main >	p {
+	 	font-size:0.9em;
+		margin-left: 15px;	
+	}
+		main li {
+			margin-bottom: 20px;
+			margin-right: 15px;
+			line-height: 1.5em;
+		}
+		article {
+			background-color: #ddd;
+			font-size: 0.8em;
+			box-sizing: border-box;
+			padding: 5px 10px;
+			line-height: 1.2em;	
+		}
+		.destaque {
+			background-color: #ff0;
+			padding: 2px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="https://rafaelescalfoni.github.io/img/logo.jpg ">
+		<h1>Centro Federal de Educação Tecnológica do Rio de Janeiro - Celso Suckow da Fonseca</h1>
+		<h3>Campus Nova Friburgo</h3>
+		<h4>Curso Técnico em Informática</h4>
+		<h4>Professor Rafael Escalfoni</h4>
+		<h4>Aluno Everson Marqui Junior</h4>
+	</header>
+	<main>
+		<h4>Programação de Clientes Web - Atividade Extra 1</h4>
+
+		<ol>
+			<li>
+				Faça um programa que leia o sexo (M ou F) e a altura de pessoas, agrupe por sexo e calcule a média de altura. Não há um número exato de pessoas a ser digitado, logo o seu programa deve calcular as médias de altura de <strong>M</strong> e <strong>F</strong> na medida em que recebe dados das pessoas.
+
+				<fieldset>
+					<legend>Questão 1</legend>
+					<p>
+						<label for="q1_sexo">Sexo do Participante</label>
+						<select id="q1_sexo">
+							<option value="M">Masculino</option>
+							<option value="F">Feminino</option>
+						</select>
+						<br>
+						<label for="q1_altura">Altura (em metros)</label>
+						<input type="number" id="q1_altura" placeholder="Digite a altura">
+						<br>
+						<button id="q1_executa">Adicionar</button>
+					</p>
+					<p id="q1_resposta">
+						<em>&lt;&lt;Exemplo abaixo. Remova os itens de exemplo antes de inserir a sua resposta!!!&gt;&gt;</em>
+					</p>
+					<table>
+						<tr>
+							<th></th>
+							<th>Homens</th>
+							<th>Mulheres</th>
+						</tr>
+						<tr>
+							<th>Participantes</th>
+							<td>4</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<th>Altura Média (m)</th>
+							<td>1,80</td>
+							<td>1,63</td>
+						</tr>
+					</table>
+				</fieldset>
+
+			</li>
+			<li>
+				Faça um programa que dado um número inteiro N digitado pelo usuário, o programa indique o n-ésimo primo. Por exemplo: se N=3, o primo correspondente será 5 (2 é o 1º, 3 é o 2º e 5 é o 3º).
+
+				<fieldset>
+					<legend>Questão 2</legend>
+					<p>
+						<input type="number" id="q2_inteiro" min="1"  placeholder="Digite um inteiro">
+						<button id="q2_executa">N-Ésimo Primo</button>
+					</p>
+					<p id="q2_resposta">
+						O 3º primo é 5. <em>&lt;&lt;Remova esta mensagem antes de inserir a sua!!!&gt;&gt;</em>
+					</p>
+				</fieldset>
+			</li>
+			<li>
+				Faça um programa que adicione nomes em uma lista e que permita ordená-los, de forma crescente e decrescente.
+
+				<fieldset>
+					<legend>Questão 3</legend>
+					<p>
+						<label for="q3_nome">Nome</label>
+						<input type="text" id="q3_nome" placeholder="Digite o nome">
+						<button id="q3_adicionar">Adicionar</button>
+					</p>
+					<p>
+						<button id="q3_ord_asc">Ordenar Ascendente</button>
+						<button id="q3_ord_desc">Ordenar Descendente</button>
+					</p>
+					<ul id="q3_lista">
+						<li>Pedro</li>
+						<li>Ana</li>
+						<li>João</li>
+					</ul>
+				</fieldset>
+			</li>
+
+			<li>
+				Habilite os botões do item 4 para que, ao clicar em cada cor, a cor de fundo da página seja alterada.
+
+				<fieldset>
+					<legend>Questão 4</legend>
+					<p>
+						<button id="q4_azul">Azul</button>
+						<button id="q4_branco">Branco</button>
+						<button id="q4_verde">Verde</button>
+						<button id="q4_cinza">Cinza</button>
+					</p>
+				</fieldset>
+			</li>
+			<li>
+				Faça um programa que dado o texto da questão, e uma entrada de texto, ao pressionar o botão Pesquisar, indique o número de ocorrências em que o trecho de entrada ocorre, destacando os trechos com cor de fundo amarelo. Para isto, utilize &lt;span class="destaque"&gt; no entorno das ocorrências. Caso a entrada de texto não exista no texto da questão, exiba uma mensagem indicando que a busca não retornou nenhum resultado.
+				<br>
+				<br> 
+				<em>Para exemplificar o uso dos destaques, a primeira palavra está usando o artifício do span. Apague antes de iniciar sua atividade.</em>
+				<br>
+				<br>
+				<fieldset>
+					<legend>Questão 5</legend>
+					<article id="questao5_texto">
+						<p>
+							<span class="destaque">JavaScript</span> (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo.
+						</p>
+						<p>
+							É atualmente a principal linguagem para programação client-side em navegadores web. É também bastante utilizada do lado do servidor através de ambientes como o node.js.
+						</p>
+						<p>
+							Como uma linguagem multiparadigma, o JavaScript suporta estilos de programação orientados a eventos, funcionais e imperativos (incluindo orientado a objetos e prototype-based), apresentando recursos como fechamentos (closures) e funções de alta ordem comumente indisponíveis em linguagens populares como Java e C++. Possui APIs para trabalhar com texto, matrizes, datas, expressões regulares e o DOM, mas a linguagem em si não inclui nenhuma E/S, como instalações de rede, armazenamento ou gráficos, contando com isso no ambiente host em que está embutido.
+						</p>
+						<p>
+							Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem com o usuário sem a necessidade deste script passar pelo servidor, controlando o navegador, realizando comunicação assíncrona e alterando o conteúdo do documento exibido, porém os mecanismos JavaScript agora estão incorporados em muitos outros tipos de software host, incluindo servidores em servidores e bancos de dados da Web e em programas que não são da Web, como processadores de texto e PDF, e em tempo de execução ambientes que disponibilizam JavaScript para escrever aplicativos móveis e de desktop, incluindo widgets de área de trabalho.
+						</p>
+						<p>
+							Os termos Vanilla JavaScript e Vanilla JS se referem ao JavaScript não estendido por qualquer estrutura ou biblioteca adicional. Scripts escritos em Vanilla JS são códigos JavaScript simples.
+						</p>
+						<p>
+							Embora existam semelhanças entre JavaScript e Java, incluindo o nome da linguagem, a sintaxe e as respectivas bibliotecas padrão, as duas linguagens são distintas e diferem muito no design; JavaScript foi influenciado por linguagens de programação como Self e Scheme.
+						</p>
+						<p>
+							É baseada em ECMAScript, padronizada pela Ecma international nas especificações ECMA-262 e ISO/IEC 16262. 
+						</p>
+					</article>
+
+					<input type="text" id="q5_termo"  placeholder="Digite um texto">
+					<button id="q5_executa">Pesquisar</button>
+
+					<p id="q5_resposta">
+						O termo <q>JavaScript</q> aparece 4 vezes. <em>Apague o exemplo antes de começar</em>
+					</p>
+				</fieldset>
+			</li>
+		</ol>
+	</main>
+
+	<script>
+		let bt_questao1 = document.getElementById("q1_executa");
+		let bt_questao2 = document.getElementById("q2_executa");
+		let bt_questao3_add = document.getElementById("q3_adicionar");
+		let bt_questao3_ord_asc = document.getElementById("q3_ord_asc");
+		let bt_questao3_ord_desc = document.getElementById("q3_ord_desc");
+		let bt_questao4_azul = document.getElementById("q4_azul");
+		let bt_questao4_branco = document.getElementById("q4_branco");
+		let bt_questao4_verde = document.getElementById("q4_verde");
+		let bt_questao4_cinza = document.getElementById("q4_cinza");
+		let bt_questao5 = document.getElementById("q5_executa");
+
+
+		let resposta1 = () => {
+			// resposta da questão 1 aqui.
+		}
+
+		let resposta2 = () => {
+			// resposta da questão 2 aqui.
+		}
+
+		let resposta3_add = () => {
+			// resposta da questão 3 - adição de novos elementos aqui.
+			
+		}
+
+		let resposta3_ordena_asc = () => {
+			// resposta da questão 3 - ordenação ascendente aqui.
+			
+		}
+
+		let resposta3_ordena_desc = () => {
+			// resposta da questão 3 - ordenação descendente aqui.
+			
+		}
+
+		
+
+		let resposta4_azul = () => {
+			// resposta da questão 4 aqui - transforme o fundo em azul
+		}
+
+		let resposta4_branco = () => {
+			// resposta da questão 4 aqui - transforme o fundo em branco
+		}
+
+		let resposta4_verde = () => {
+			// resposta da questão 4 aqui - transforme o fundo em verde
+		}
+
+		let resposta4_cinza = () => {
+			// resposta da questão 4 aqui - transforme o fundo em cinza
+		}
+
+		let resposta5 = () => {
+			// resposta da questão 5 aqui.
+		}
+		
+
+		//Atribuindo o evento click dos botões às funções acima
+		bt_questao1.addEventListener("click", resposta1, false);
+		bt_questao2.addEventListener("click", resposta2, false);
+		bt_questao3_add.addEventListener("click", resposta3_add, false);
+		bt_questao3_ord_asc.addEventListener("click", resposta3_ordena_asc, false);
+		bt_questao3_ord_desc.addEventListener("click", resposta3_ordena_desc, false);
+		bt_questao4_azul.addEventListener("click", resposta4_azul, false);
+		bt_questao4_branco.addEventListener("click", resposta4_branco, false);
+		bt_questao4_verde.addEventListener("click", resposta4_verde, false);
+		bt_questao4_cinza.addEventListener("click", resposta4_cinza, false);
+		bt_questao5.addEventListener("click", resposta5, false);
+
+
+	</script>
+		<script src="++Atividade - 1 .js"></script> 
+</body>
+</html>
