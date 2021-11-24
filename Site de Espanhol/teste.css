@@ -1,0 +1,77 @@
+body{
+    background-color:rgb(230, 138, 153)
+}
+
+
+#logo{
+    width: 22%;
+    float: left;
+}
+
+label {display: block;}
+input, button {padding: 10px;}
+input {width: 50%;}}
+
+#div1 #div2 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#TITULO{
+    color: red;
+    font-size: 20px;
+}
+
+#icone_home{
+    float: right;
+}
+
+#imagem_intro{
+    clear: both;
+    text-align: center;
+}
+
+#ESQUERDA{
+    text-align: center;
+}
+ 
+#CENTRO{
+    text-align: center;
+}
+
+#DIREITA{
+    
+    text-align: center;
+}
+
+#clear{
+    clear: both;
+}
+
+#caixas{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+#caixas div{
+    width: 33%;
+}
+
+#SABER{
+    color: rgb(52, 52, 240);
+}
+
+#BOTOES{
+    display: flex;
+    justify-content: center;
+    margin-left: 12%;
+    text-align: center;
+}
+
+#BOTOES div{
+    width: 33%;
+    margin-left: 1%;
+    text-align: center;
+}
