@@ -4,24 +4,20 @@
  * 
  */
 
-
 /**
  * Define como os itens serão carregados na tela
  * @param {lista de itens} foods 
  */
-
-function createItems(foods) {
+ function createItems(foods) {
     //recupera o container dos itens
     let menu = document.querySelector("#menu");
     //apagando os itens atuais do DOM
     menu.innerHTML = "";
     foods.forEach(food => {
         let figFood = document.createElement("figure");
-        figFood.id = food.id;
-        
-        figFood.innerHTML = `<button id = "editando">Editar</button src="${food.image}" alt="${food.name}">
-            <img src = "${food.image}" alt = ${food.name}">
-            <figcaption> ${food.name}</figcaption>`;
+        figFood.id = `food-${food.id}`;
+        figFood.innerHTML =`<button id="reeditar">Editar</button><img src="${food.image}" alt="${food.name}">
+                <figcaption>${food.name}</figcaption>` ;
         menu.appendChild(figFood);
     });
 }
@@ -31,4 +27,4 @@ function save() {
     return Object.fromEntries(new FormData(formFood));
 }
 
-export default {createItems, save};
+export default { createItems, save };

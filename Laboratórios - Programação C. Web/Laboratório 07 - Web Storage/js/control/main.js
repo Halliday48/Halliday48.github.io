@@ -65,9 +65,8 @@ document.addEventListener("click", (event) =>{
         let foodId = parseInt(event.target.parentNode.id.substr(5));
         let updatedFood = view.save();
         console.log(foodId)
-        foods.editando(foodId, updatedFood);
+        foods.update(foodId, updatedFood);
 
         view.createItems(foods.listFood(dataset));
     }
 })
-
