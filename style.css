@@ -5,10 +5,18 @@
     
 }
 
+.apresent{
+    display:flex;
+    flex-wrap:wrap;
+    max-width:100%;
+    margin:0 auto;
+    padding:0 15%;
+}
+
 .center{
     display:flex;
     flex-wrap:wrap;
-    max-width:1200px;
+    max-width:100%;
     margin:0 auto;
     padding:0 2%;
 }
@@ -84,15 +92,10 @@ section.sobre{
 
 .texto h1{
     font-size: 40px;
-    margin: 30px 0;
+    margin: 30px auto;
 }
 
-.texto button{
-    border: 0;
-    background-color: rgb(10, 247, 255);
-    color:#fff;
-    border-radius: 50px;
-    width: 150px;
-    height: 40px;
-    cursor:pointer;
+.butão img{
+    width: 35%;
+    height: 35%%;
 }

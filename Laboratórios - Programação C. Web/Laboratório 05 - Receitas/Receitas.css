@@ -1,0 +1,33 @@
+body{
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 8, 8);
+}
+
+#img{
+  border-width: medium;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+}
+
+.img{
+    width: 500px;
+}
+
+
+.receita1{
+    display: block;
+    text-align: center;
+
+}
+
+.receita2{
+    display: block;
+    text-align: left;
+    color:cornsilk;
+}
+
+.br{
+    clear: both;
+}

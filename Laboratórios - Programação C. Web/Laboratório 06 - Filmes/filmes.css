@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    color: #FFF;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #FFF, #d3d3d3 );
+}
+
+.imagem{
+    width: 50px; 
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.item{
+    background-color: #00008b ;
+    padding: 10px;
+    height: 575px;
+    width: 400px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.firstImage{
+    border-radius: 5%;
+    margin-top: 10px;
+    width: 90%;
+    height: 30%; 
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    text-align: center;
+}
+.Indicacoes{
+    width: 25px;
+    height: 20px; 
+}
+
+.red, .yellow, .green{
+    text-align: center;
+    border-radius: 15%; 
+}
+.red{
+    background-color: rgb(255, 8, 8);
+}
+.green{ 
+    background-color: rgb(16, 228, 16);
+}
+.yellow{
+    background-color: rgb(253, 253, 24);  
+}
+
+
+
+
+ul{
+    list-style: none;
+    font-size: 15px;
+}
+
+.listas{
+    display: flex;
+    font-family:"font-family:Helvetica, sans-serif;"
+    justify-content: center;
+    gap: 2em;
+    text-align: center;
+
+    
+}
+.listas ul{
+    font-size: 15px;
+}
+
+h4{
+    text-align: justify;
+    font-size: smaller;
+    padding-top: 15px;
+}
+
+.h4Listas{
+    text-align: center;
+}
+
+h5{
+    text-align: left;
+    padding-top: 10px;
+}
+
+p{
+    text-align: left;
+    font-size: small;
+}
+
+hr{
+    padding: 1px;
+    
+}
+
+.stars{
+    padding-bottom: 10px;
+}
+
+.stars p{
+    text-align: left;
+    font-family: 'Bebas', sans-serif ;
+    
+}
+
+.stars img{
+    text-align: center;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.chegaa img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 20%;
+}
