@@ -46,7 +46,7 @@ section.module.content{
     background: #FFF;
 }
 
-section.module.lindex{
+section.module.eindex{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +64,7 @@ section.module.lindex{
 
 }
 
-section.module.lindex:after{
+section.module.eindex:after{
     content: "";
     height: 100%;
     width: 100%;
@@ -76,21 +76,21 @@ section.module.lindex:after{
     background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgrgba(0,0,0,0) 40%, #000 100%);
 }
 
-.butão-1 img{
+.butão img{
     text-align: center;
     width: 20%;
     height: 20%;
 }
 
-section.module.lindex{
-    background-image: url(https://dkrn4sk0rn31v.cloudfront.net/uploads/2021/01/GUIA-INTRODU%C3%87%C3%83O-PROGRAMA%C3%87%C3%83O.png);
+section.module.eindex{
+    background-image: url(https://halliday48.github.io/Imagens/Logo%20Extras.png);
 }
 
-section.module.lindex-1{
-    background-image: url(https://blog-geek-midia.s3.amazonaws.com/wp-content/uploads/2021/08/19161229/ide-javascript.png);
+section.module.eindex-1{
+    background-image: url(https://halliday48.github.io/Imagens/Extra%201.png);
 }
 
-section.module.lindex h1{
+section.module.eindex h1{
     color: #FFF;
     text-align: center;
     font-size: 78px;
@@ -98,7 +98,7 @@ section.module.lindex h1{
     text-transform: uppercase;
 }
 
-section.module.lindex-1 h1,a{
+section.module.eindex-1 h1,a{
     color: #000;
     text-align: center;
     font-size: 50px;
