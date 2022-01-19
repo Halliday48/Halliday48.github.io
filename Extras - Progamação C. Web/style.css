@@ -85,6 +85,22 @@ section.module.eindex:after{
     height: 20%;
 }
 
+.organizando{
+    display: flex;
+}
+
+.Hbutão img{
+    margin-right: 35px;
+    width: 0.75em;
+    height: 0.75em;
+}
+
+
+.Gbutão img{
+    width: 0.75em;
+    height: 0.75em;
+}
+
 section.module.eindex{
     background-image: url(https://halliday48.github.io/Imagens/Logo%20Extras.png);
 }
