@@ -81,13 +81,12 @@ ul{
 
 .listas{
     display: flex;
-    font-family:"font-family:Helvetica, sans-serif;"
+    font-family:"font-family:Helvetica, sans-serif;";
     justify-content: center;
     gap: 2em;
-    text-align: center;
-
-    
+    text-align: center; 
 }
+
 .listas ul{
     font-size: 15px;
 }

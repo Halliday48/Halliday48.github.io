@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Dom - Números</title>
+    <script src=".js/Números.js" defer></script>
 </head>
 <body>
 
-    <div class="inputs">
-        <input id="inputL" type=number></input>
-        <input id="inputM" type=number></input>
-        <input id="inputR" type=number></input>
-    </div>
-<div class="options">
-    <button id="sum">Soma</button>
-    <button id="big">Maior</button>
-    <button id="pri">É primo?</button>
-    <button id="hip">Hipotenusa</button>
-    <button id="sal">Reajuste de salário</button>
-    <button id="tem">Fahrenheit para Celsius</button>
-    <button id="not">Nota</button>
+  <h2>Soma</h2>
+    <input class="add1" type="number"/>
+    <input class="add2" type="number"/>
+  <button  onclick="addfuncao()">Somar</button>
+  
+    <p class="add"></p>
 
-    </div>
+  <hr/>
 
-    <p id="output"></p>
-
+  <h2>Maior que e Menor que</h2>
+    <input class="bigest1" type="number"/>
+    <input class="bigest2" type="number"/>
+  <button  onclick="bigestfuncao()">Comparar</button>
+  
+    <p class="bigest"></p>
+ 
+  <hr/>
+  
+  <h2>Número Primo</h2>
+    <input class="primo1" type="number"/>
+  <button onclick="primofuncao()">Verificar</button>
+    
+    <p class="primo"></p>
+  
+  <hr/>
+  
+  <h2>Hipotenusa</h2>
+    <input class="hi1" type="number"/>
+    <input class="hi2" type="number"/>
+  <button onclick="hifuncao()">Calcular</button>
+  
+    <p class="hi"></p>
+  
+  <hr/>
+  
+  <h2>Reajuste Salarial</h2>
+    <input class="salario1" type="number" placeholder="Salario atual"/>
+    <input class="salario2" type="number" placeholder="Reajuste em %"/>
+  <button onclick="salariofuncao()">Reajustar</button>
+  
+    <p class="salario"></p>
+ 
+  <hr/>
+  
+  <h2>Fahrenheit para Celsius</h2>
+    <input class="graus1" type="number" />
+  <button onclick="grausfuncao()">Transformar</button>
+  
+    <p class="grauscelcius"></p>
+  
+  <hr/>
+  
+  <h2>Media</h2>
+    <input class="nota1" type="number"/>
+    <input class="nota2" type="number"/>
+    <input class="nota3" type="number"/>
+  <button onclick="mediafuncao()">Calcular</button>
+  <p class="nota"></p>
 </body>
-<script src="Números.js"></script>
 </html>

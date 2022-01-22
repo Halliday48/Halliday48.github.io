@@ -2,27 +2,27 @@ function ATM(money){
     for(aHundred=0;money - 100 >= 0; aHundred++){
         money -= 100;
         
-    }console.log('100 bills: ',aHundred);
+    }console.log('100 reais: ',aHundred);
     for(aFifty=0;money - 50 >= 0; aFifty++){
         money -= 50;
         
-    }console.log('50 bills: ',aFifty);
+    }console.log('50 reais: ',aFifty);
     for(aTwenty=0;money - 20 >= 0; aTwenty++){
         money -= 20;
         
-    }console.log('20 bills: ',aTwenty);
+    }console.log('20 reais: ',aTwenty);
     for(aTen=0;money - 10 >= 0; aTen++){
         money -= 10;
 
-    }console.log('10 bills: ',aTen);
+    }console.log('10 reais: ',aTen);
     for(aFive=0;money - 5 >= 0; aFive++){
         money -= 5;
         
-    }console.log('5 bills: ',aFive);
+    }console.log('5 reais: ',aFive);
     for(aTwo=0;money - 2 >= 0; aTwo++){
         money -= 2;
         
-    }console.log('2 bills: ',aTwo);
+    }console.log('2 reais: ',aTwo);
     if(money == 0) return 'Sucess'
     else return 'There is '+money+' Dolar left';
 
