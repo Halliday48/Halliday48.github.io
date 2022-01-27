@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="atividade01.js"></script>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+        <div class="content">
+
+			<a href="index.html"><button>Voltar ao menu principal</button></a>
+
+			<h1>Livraria do Cefet</h1>
+			<p>
+				Nesta atividade, você deve desenvolver uma tela de cadastro de livros para uma biblioteca. Sua interface organizar em uma tabela todos os livros digitados no formulário para uma posterior submissão em bloco.
+			</p>
+			<p>
+				Os livros digitados devem ser colocados em um array de "Livro"s, como definido no código-fonte deste exercício:
+				<pre>
+{
+	"titulo":  titulo,
+	"descricao": descricao,
+	"genero": genero,
+	"autor": autor
+};
+				</pre>
+			</p>
+			<p>
+				Seus dados devem ser enviados numa requisição HTTP com método POST para a URL http://httpbin.org/post
+			</p>
+			<fieldset>
+				<legend>Cadastro de Livros</legend>
+				<label>Título</label>
+				<input type="text" id="titulo" placeholder="Digite o título do livro"/> <br />
+				<label>Descrição</label>
+				<textarea id="descricao" placeholder="Digite uma descricao para o livro"></textarea> <br />
+				<label>Autores</label>
+				<input type="text" id="autores" placeholder="Digite os autores da obra"/> <br />
+				<label>Estilo</label>
+				<input type="text" id="estilo" placeholder="Digite o estilo do livro"/>
+				<br>
+				<button id="adicionar">Adicionar</button>
+				<button id="excluir">Limpar</button>
+			</fieldset>
+			
+			<table id="acervo">
+				<tr> 
+					<th>Título</th>
+					<th>Autores</th>
+					<th>Estilo</th>
+					<th>Descrição</th>
+					<th></th>
+				</tr>
+			</table>
+			<button id="apagarAcervo">Apagar</button>
+			
+			<button id="enviar">Enviar</button>
+			
+			
+	
+
+			
+			
+		</div>
+        <footer></footer>
+    </div>
+</body>
+</html>

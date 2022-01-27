@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(210, 210, 210);
+    padding: 0;
+    margin: 0;
+    
+}
+
+#title{
+    margin: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+nav{
+    text-align: center;
+    margin: 80px;
+}
+
+
+nav+p{
+    background-color: white;
+}
+
+img{
+    margin-top: 10px;
+    width: 125px;
+    height: 140px;
+}
+
+.buttons{
+    background-color: white;
+    box-shadow: 0 0 2.5em black;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    font-size: 20px;
+}
+

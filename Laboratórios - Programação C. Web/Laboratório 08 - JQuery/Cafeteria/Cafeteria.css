@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    margin: 0;
+    background-color:rgb(32, 32, 32);
+}
+
+.content {
+    border-top: solid 5px rgb(41, 128, 185);
+    background-color: #fff;
+    float:left;
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+}
+
+#resultado{
+    margin-top: 20px;
+    border-top: 2px solid rgb(32, 32, 32);
+}
+
+footer{
+    clear:both;
+}
