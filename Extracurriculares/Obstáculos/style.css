@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightblue;
+  
+}
+
+#game{
+    margin-right: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+    background-color: darkblue;
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+#personagem{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 150px;
+}
+
+.animar{
+    animation: personagem 300ms infinite;
+}
+
+@keyframes personagem {
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 100px;}
+}
+
+#quadrado{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: quadrado 1s infinite linear;
+}
+
+@keyframes quadrado {
+    0%{left: 480px;}
+    100%{left: -1px;}
+}
+
+h1{
+    text-align: center;
+    margin-top: 15px;
+}
