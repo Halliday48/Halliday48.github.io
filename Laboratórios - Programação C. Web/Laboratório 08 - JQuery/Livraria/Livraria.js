@@ -1,4 +1,3 @@
-//função construtora de objetos Produto
 function Livro(id, nome, autores, estilo){
 	this.id = id;
 	this.nome = nome;
@@ -7,7 +6,6 @@ function Livro(id, nome, autores, estilo){
 }
 
 
-// programar a remoção do livro no array listaLivros e sua remoção no DOM
 function removerLivro(id)
 {
 	for(let i=0; i<listaLivros.length; i++)
@@ -71,10 +69,9 @@ $(function(){
 	})
 
 	$("#enviar").click(function(){
-		//let url = "https://157.230.5.17/web/livros.php";// passarei para vocês mais tarde 
 		
 		let url = "http://httpbin.org/post";
-		let dados = $("#dados").val();  //pegar o valor do input #dados 
+		let dados = $("#dados").val(); 
 		$.post(url, dados, function(data,status){
 			alert("Data: " + data + "\nStatus: " + status);
 		  }
