@@ -1,0 +1,49 @@
+body{
+    --cor1: rgb(77, 10, 14);
+    --cor2: rgb(128, 94, 35);
+
+
+    background-image: linear-gradient( to right,
+        var(--cor1) 50%, 
+        var(--cor2) 50%);
+}
+
+header{
+    background-color: white;
+    height:100px;
+    width: 60%;
+
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 45px;
+    
+    border-radius: 50px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.persona{
+    border-radius: 10%;
+    background-color: white;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-bottom: 30px;
+
+    will-change: transform;
+    transition: transform 450ms;
+}
+
+.persona:hover{
+    transition: transform 250ms;
+    transform: translateY(-3%)
+}
+
+.persona img{
+    margin: 14px 8px 0px 8px;
+    border-radius: 10%;
+    max-width: 70%;    
+    min-width: 55%;
+}
